@@ -19,16 +19,12 @@ public class Abonent {
     @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false)
-    private String surname;
-
     public Abonent() {
     }
 
     public Abonent(String address, String name, String surname) {
         this.address = address;
         this.name = name;
-        this.surname = surname;
     }
 
     public Long getId() {
@@ -61,13 +57,5 @@ public class Abonent {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
     }
 }

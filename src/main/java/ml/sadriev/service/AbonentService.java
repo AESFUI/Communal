@@ -8,6 +8,6 @@ public interface AbonentService {
     void deleteAbonent(Long id);
     Abonent editAbonent(Abonent abonent);
     Abonent getByAddress(String address);
-    Abonent getByName(String name, String surname);
+    Abonent getByName(String name);
     List<Abonent> getAll();
 }
